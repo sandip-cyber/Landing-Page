@@ -1,0 +1,415 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Global */
+                        /* Universal selector */
+/*  Both are needed because browsers have different default values for each. So Remove default margin, Remove default padding ,Include padding and border in element's total width and height in box model*/
+
+*{                          
+  margin: 0;     
+  padding: 0;   
+  box-sizing: border-box;  
+}
+
+                                   /* Body and html */
+                           /* hidding the x-axis scroll bar */
+
+body, html{                   
+  overflow-x: hidden;
+}
+                                /* anchor tag */
+                  /* Remove underline from links and color whitesmoke  */
+
+a{
+  text-decoration: none;     
+  color: whitesmoke;      
+    }
+
+                                 /* anchor tag hover using this website to show click button to attractive */
+
+a:hover{
+  color: rgb(143, 221, 27);  /* Hover link color */    
+  
+}
+
+                                /* ul (unorder list are use to this website to remove the default list style */
+
+ul{
+  list-style: none;  
+  
+}
+                                  /* .active class use to change the home button tag */
+
+.active{
+  color: rgb(21, 253, 0);  /* Active link color */   /* Links */
+  text-decoration: underline;  /* Underline active link */   /* Links */
+  font-weight: bold;           /* Bold active link */  /* Links */
+}
+
+/* --------------------------- NAVBAR ------------------------------------------------------------------*/
+
+                                    /* Navigation bar change the position , color,   */
+
+.navbar{ 
+  position: absolute;           /* Position navbar */  /* Navbar */
+  top: 0;                      /* Position navbar at the top */  /* Navbar */
+  left: 0;                     /* Position navbar at the left */  /* Navbar */
+  display: flex;              /* Flexbox */  /* Navbar */
+  width: 100%;               /* Full width */  /* Navbar */
+  justify-content: space-between ;   /* Space between elements */  /* Navbar */
+  padding: 20px;                    /* Padding */  /* Navbar */
+  color: goldenrod;               /* Text color */  /* Navbar */
+}
+
+                      /* Navigation bar button section position center  */
+
+.nav-links{            /* Navbar */
+  display: flex;      /* Flexbox */  /* Navbar */
+  align-items: center;  /* Center vertically */  /* Navbar */
+}
+
+                        /* Navigation bar button create space left-right side */
+
+.nav-links li{       /* Navbar */
+  margin: 0 30px;   /* Space between list items */  /* Navbar */
+  
+}
+  /*----------------------------------------- HEADER ----------------------------------------------------------*/
+
+                              /* header show my  image and position change */
+
+
+ header{                        
+  width: 100vw;  /* Full width */     /* Viewport units */
+  height: 100vh; /* Full height */    /* Viewport units */
+  background-image: url('https://cdn.pixabay.com/photo/2022/05/27/06/34/tre-cime-di-lavaredo-7224478_960_720.jpg');                          /* Background image */ /* Image by Free-Photos from Pixabay */
+  background-position: bottom;   /* Position the background image */  /* Background image */
+  background-size: cover;        /* Cover the whole element */  /* Background image */
+  display: flex;                 /* Flexbox */  /* Center content */
+  align-items: flex-end;          /* Center vertically */  /* End content */
+  justify-content: center;     /* Center horizontally */  /* Center content */
+}
+
+.header-content {          /* Header content */
+  margin-bottom: 150px;  /* Space between header content and bottom */  
+  color: whitesmoke;     /* Text color */  
+  text-align: center;    /* Center text */  
+}
+
+.header-content h2{           /* Header content */
+  font-size: 4vmin;   /* Responsive font size */ /* 4vmin = 4% of the viewport's smaller dimension */
+}
+
+.line{             /* Separation line */
+  width: 150px;   /* Line width */ /* Separation line */
+  height: 4px;    /* Line height */ /* Separation line */
+  background-color: greenyellow; /* Line color */ /* Separation line */ 
+  margin: 10px auto;  /* Space between lines */ /* Separation line */ /* Center line */ 
+
+}
+
+.header-content h1{            /* Header content */
+  font-size: 7vmin;   /* Responsive font size */ /* 7vmin = 7% of the viewport's smaller dimension */
+  margin-top: 50px;   /* Space between h2 and h1 */
+  margin-bottom: 30px;  /* Space between h1 and line */
+}
+
+.ctn{                   /* Button container */
+  padding: 8px 15px;  /* Padding */ /* Button */
+  background-color: seagreen; /* Button color */ /* Button */
+  border-radius: 30px; /* Button border radius */ /* Button */
+  color: whitesmoke;    /* Button text color */ /* Button */
+}
+
+/*--------------------------------- Button ----------------------------------------------*/
+
+.ctn:hover{            
+  background-color: rgb(27, 221, 76); /* Hover button color */ 
+  color: #000;  /* Hover button text color */ 
+  box-shadow: 2px 2px 5px black; /* Button shadow */ 
+}
+
+/* ---------------------------------- menu button -------------------------------------------- */
+
+.menu-btn{
+  position: absolute; /* Position menu button */  
+  top: 30px; /* Position menu button at the top */  
+  right: 30px; /* Position menu button at the right */  
+  width: 40px; /* Menu button width */  
+  cursor: pointer; /* Cursor pointer */  
+  display: none; /* Hide menu button */  
+}
+
+/* ------------------------------------Logo Animation ----------------------------------------------*/
+
+.logo{
+  
+  animation-name: change; /* Animation name */  /* mobile Navbar */
+  animation-duration: 5s; /* Animation duration */  /* mobile Navbar */
+
+}
+
+@keyframes change{
+  from{color: goldenrod;  }                       /* Background color */  /* mobile Navbar */
+  to{color: skyblue;  }                          /* Background color */  /* mobile Navbar */
+} 
+@keyframes change{
+  from{color: skyblue; }                         /* Background color */  /* mobile Navbar */
+  to{color: rgb(36, 250, 36);  }                /* Background color */  /* mobile Navbar */
+} 
+
+/*------------------------------------------- Event Section -----------------------------------------------------*/
+
+section{
+  width: 80%;
+  margin: 80px auto;
+}
+.title{
+  text-align: center;
+  font-size: 4vmin;
+  color: purple;
+}
+.row{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .col  {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row .col img{
+  width: 80%;
+}
+
+.events .row{
+margin-top: 50px;
+}
+h4{
+  font-size: 3vmin;
+  color: purple;
+  margin: 20px auto;
+}
+
+p {
+  color: goldenrod;
+  padding: 0px 40px;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+
+/* ------------------------------------Explore Section --------------------------------------------------------*/
+
+
+
+.explore{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2018/02/27/17/26/husky-3186049_1280.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+
+.explore-content{
+  width: 50%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-content h1 {
+font-size: 7vmin;
+margin: 1px;
+}
+
+.explore-content p {
+  color: lightgreen;
+
+}
+
+.explore-content .ctn{
+  margin-top: 40px;
+}
+
+.explore-content .line{
+  margin-bottom: 50px;
+}
+
+/* ------------------------------------Tours Section --------------------------------------------------------- */
+.content-col{
+  width: 40%;
+}
+
+.image-col{
+  width: 60%;
+}
+
+.tours .row .col{
+  width: 50%;
+}
+
+.tours .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 40%;
+  margin: 10px;
+}
+.content-col h1{
+  font-size: 7vmin;
+  color: rgb(77, 0, 128);
+}
+
+.content-col .line{
+  margin-left:  -1px;
+}
+.content-col p{
+  padding: 0;
+  margin: 30px auto;
+}
+.content-col .ctn{
+  margin-left: -100px;
+}
+/* -----------------------------------------------FOOTER-------------------------------------------------- */
+.footer{
+  width: 100%;
+ min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background-color: rgb(38, 23, 124);
+  text-align: center;
+}
+
+.footer p{
+  color: whitesmoke;
+  margin: 20px auto;
+  padding: 20px auto;
+}
+ /*---------------------------------- MOBILE DEVICE VIEW ------------------------------------------------------*/
+
+     @media only screen and (max-width: 850px){
+
+      
+
+      .menu-btn{
+        display: block; /* Display menu button */  /* mobile Navbar */
+      }
+      .navbar{
+        padding: 0; /* Padding */  /*  mobile Navbar */
+      }
+
+      .logo{
+        position: absolute; /* Position logo */  /* mobile Navbar */
+        top: 30px; /* Position logo at the top */  /* mobile Navbar */
+        left: 30px; /* Position logo at the left */  /* mobile Navbar */
+        animation-name: change; /* Animation name */  /* mobile Navbar */
+        animation-duration: 5s; /* Animation duration */  /* mobile Navbar */
+
+      }
+      
+      @keyframes change{
+        from{color: goldenrod;  /* Background color */  /* mobile Navbar */}
+        to{color: skyblue;  /* Background color */  /* mobile Navbar */}
+      } 
+      @keyframes change{
+        from{color: skyblue;  /* Background color */  /* mobile Navbar */}
+        to{color: rgb(36, 250, 36);  /* Background color */  /* mobile Navbar */}
+      } 
+
+      .nav-links{
+        flex-direction: column;              /* Column layout */  /* mobile Navbar */
+        width: 100%;                        /* Full width */  /* mobile Navbar */
+        height: 100vh;                       /* Full height */  /* mobile Navbar */
+        justify-content: center;             /* Center content */  /* mobile Navbar */
+        background-color: #e67300;          /* List item background color */  /* mobile Navbar */
+
+        margin-left: -100%;      /* Space between navbar and header */  /* mobile Navbar */
+
+        transition:  0.8s ease;   /* Smooth transition */  /* mobile Navbar */
+        
+      }
+
+      .mobile-menu{
+        margin: 0px; /* Space between list items */  /* mobile Navbar */
+        
+        border-bottom-right-radius: 100%;   /* Border radius */  /* mobile Navbar */
+      }
+
+      .nav-links li{
+        margin: 30px auto; /* Space between list items */  /* mobile Navbar */
+       
+      }
+
+      /* ------------------------Mobile Event section ---------------------------------------- */
+
+      .row{
+        flex-direction: column;  /* Column layout */  /* mobile Event section */
+      }
+
+      .row .col{
+        margin: 20px auto;  /* Space between columns */  /* mobile Event section */
+      }
+
+      .col img{
+        width: 90%;  /* Full width */  /* mobile Event section */
+      }
+
+      .explore-content{
+        width: 100%;  /* Full width */  /* mobile Explore section */
+        
+      }
+
+      .tours .col{
+        width: 100%;  /* Full width */  /* mobile Tours section */
+      }
+
+      .image-gallery{
+        justify-content: center;  /* Center content */  
+        align-items: center;  /* Center vertically */  /* mobile Tours section */
+      }
+
+      .image-gallery img {
+        max-width: 1000px;
+        margin: 5px auto;
+      }
+
+      .tours .image-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        width: 250%;
+        align-items: center;
+      }
+
+      
+      .footer{
+        padding: 10px;  /* Padding */  /* mobile Footer */
+      }
+     }
+
+     img{
+      transition: transform 0.5s ease;  /* Smooth transition */  /* Image */
+     }
+
+     img:hover{
+        transform: scale(1.1);  /* Scale image */  /* Image */
+      }
+
+/* ---------------------------------- End ------------------------------------------------------*/
